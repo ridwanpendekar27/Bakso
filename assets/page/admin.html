@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Warung bakso Sinar Waros</title>
+    <link rel="stylesheet" href="/assets/css/admin.css" />
+  </head>
+  <body>
+    <header>
+      <img id="logo" src="/assets/img/gambar1.png" alt="" />
+      <nav class="nav">
+        <ul>
+          <li><a href="contact.html">Lokasi</a></li>
+          <li><a href="/index.html">Logout</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <aside class="sidebar">
+        <h2>Admin</h2>
+        <nav>
+          <ul>
+            <li><a href="profil.html">User</a></li>
+            <li><a href="admin.html">Menu Pesanan</a></li>
+          </ul>
+        </nav>
+      </aside>
+      <main class="main-content">
+        <h1>Admin Dashboard</h1>
+        <p>Daftar Pesanan</p>
+        <button id="resetantrian">Reset Antrian</button>
+        <div class="container-2">
+          <table>
+            <thead>
+              <tr>
+                <th>Bungkus/Makan di tempat</th>
+                <th>No.Antrian</th>
+                <th>Menu</th>
+                <th>Satuan</th>
+                <th>Total Harga</th>
+                <th>Edit</th>
+              </tr>
+            </thead>
+            <tbody id="orderTable">
+              <!-- Data akan ditambahkan di sini -->
+            </tbody>
+          </table>
+        </div>
+      </main>
+    </div>
+    <script src="/assets/js/admin.js"></script>
+  </body>
+</html>

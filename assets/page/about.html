@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warung bakso Sinar Waros</title>
+    <link rel="stylesheet" href="/assets/css/about.css">
+</head>
+<body>
+    <header>
+        <img id="logo" src="/assets/img/gambar1.png" alt="">
+        <nav class="nav">
+            <ul>
+                <li><a href="contact.html">Lokasi</a></li>
+                <li><a href="/index.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="user.html">Menu</a></li>
+                    <li><a href="about.html">Pesanan</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <div class="container-2">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Daftar Menu</th>
+                        </tr>
+                    </thead>
+                    <tbody id="orderTable">
+                        <tr>
+                            <td>Bakso</td>
+                        </tr>
+                        <tr>
+                            <td>Telur</td>
+                        </tr>
+                        <tr>
+                            <td>Lontong</td>
+                        </tr>
+                        <tr>
+                            <td>Kerupuk</td>
+                        </tr>
+                        <tr>
+                            <td>Kacang</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <form id="queueForm" class="form">
+                    <div class="input-container">
+                        <div id="queueNumber" class="queue-number">
+                            <input placeholder="No. Antrian" type="text" id="queueInput" readonly>
+                        </div>
+                    </div>
+                    <div class="input-container">
+                        <select id="bungkus" class="form_style" required>
+                            <option value="" disabled selected>Bungkus/Makan di tempat</option>
+                            <option value="Bungkus">Bungkus</option>
+                            <option value="Makan di tempat">Makan di tempat</option>
+                        </select>
+                        <select id="jenis_menu" class="form_style" required>
+                            <option value="" disabled selected>Pilih Menu</option>
+                            <option value="Bakso">Bakso</option>
+                            <option value="Telur">Telur</option>
+                            <option value="Lontong">Lontong</option>
+                            <option value="Kerupuk">Kerupuk</option>
+                            <option value="Kacang">Kacang</option>
+                        </select>
+                        <input placeholder="Satuan" type="text" id="satuan" required>
+                        <input placeholder="Harga" type="text" id="harga" readonly>
+                    </div>
+                    <button class="submit" type="submit">Simpan</button>
+                </form>
+            </div>
+        </main>
+    </div>
+    <script src="/assets/js/about.js"></script>
+</body>
+</html>
